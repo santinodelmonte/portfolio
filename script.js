@@ -1,50 +1,36 @@
-document.addEventListener("DOMContentLoaded", function(){
+AOS.init({
+duration:1000,
+once:true
+});
 
-AOS.init();
-
-new Typed(".typing",{
+var typed = new Typed(".typing", {
 strings:[
 "Desarrollador Full Stack",
-"Apasionado por el Backend",
-"Creando soluciones digitales"
+"Creando soluciones digitales",
+"Sitios web y aplicaciones modernas"
 ],
-typeSpeed:60,
-backSpeed:40,
+typeSpeed:50,
+backSpeed:30,
 loop:true
 });
 
 particlesJS("particles-js", {
-particles: {
-number: { value: 70 },
-color: { value: "#000000" },
-shape: { type: "circle" },
-opacity: { value: 0.5 },
-size: { value: 3 },
-line_linked: {
-enable: true,
-distance: 150,
-color: "#000000",
-opacity: 0.4,
-width: 1
+particles:{
+number:{value:60},
+size:{value:3},
+color:{value:"#0d6efd"},
+line_linked:{
+enable:true,
+distance:150,
+color:"#0d6efd",
+opacity:0.2,
+width:1
 },
-move: {
-enable: true,
-speed: 2
-}
+move:{speed:2}
 },
-interactivity: {
-events: {
-onhover: {
-enable: true,
-mode: "repulse"
-}
-},
-modes: {
-repulse: {
-distance: 100
+interactivity:{
+events:{
+onhover:{enable:true,mode:"repulse"}
 }
 }
-}
-});
-
 });
