@@ -75,3 +75,69 @@ font-size:14px;
 margin-top:5px;
 font-weight:500;
 }
+/* GRID DE PROYECTOS */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+/* CARD */
+
+.project-card{
+background:white;
+padding:25px;
+border-radius:12px;
+transition:all .3s ease;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.project-card h3{
+font-size:1.2rem;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.project-card p{
+font-size:0.95rem;
+margin-bottom:10px;
+}
+
+/* STACK */
+
+.stack{
+display:inline-block;
+background:#f1f3f5;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+margin-bottom:15px;
+}
+
+/* BOTONES */
+
+.project-buttons{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.project-buttons .btn{
+padding:6px 12px;
+font-size:0.85rem;
+border-radius:6px;
+border:1px solid #dee2e6;
+background:white;
+}
+
+.project-buttons .btn:hover{
+background:#0d6efd;
+color:white;
+border-color:#0d6efd;
+}
+
